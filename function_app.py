@@ -55,7 +55,7 @@ def BlobTrigger(myblob: func.InputStream):
 def http_read_blob(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger processing a request.')
 
-    # 1. Get the account URL (e.g., https://rgdemoa8ce.blob.core.windows.net)
+    # 1. Get the account URL (e.g., https://aaa.blob.core.windows.net)
     # Best practice: Store this in an App Setting
     account_url = os.environ.get("BLOB_STORAGE_ACCOUNT_URL")
     container_name = "mycontainer"
